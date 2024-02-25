@@ -11,20 +11,20 @@ public class ShipInfo : MonoBehaviour
 {
     public Ships ships;
 
-    [Header("Description Headers")]
+    [Header("Description Headers")] // references the text mesh pro text that is in the description panel
 
     public TextMeshProUGUI shipName;
     public TextMeshProUGUI shipSize;
     public TextMeshProUGUI tileSize;
     public TextMeshProUGUI hP;
 
-    [Header("Image References")]
+    [Header("Image References")] // references the UI image
     public Image shipImage;
     public void displayUI()
     {
         DisplayShip(ships);
     }
-    public void DisplayShip(Ships ship)
+    public void DisplayShip(Ships ship) // displays the info of the ship on the description panel
     {
         shipName.text = "Ship Name: " + ship.shipName;
         shipSize.text = "Ship Size: " + ship.size.ToString();
@@ -33,7 +33,7 @@ public class ShipInfo : MonoBehaviour
         shipImage.sprite = ship.shipImage;
     }
 
-    public void ClearUI()
+    public void ClearUI() // clears the text so a new text can load when a button is pressed
     {
         ships = null;
         shipName = null;

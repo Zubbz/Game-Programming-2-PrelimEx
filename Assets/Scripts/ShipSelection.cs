@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShipSelection : MonoBehaviour
+public class ShipSelection : MonoBehaviour // allows the developer to references the needed objects
 {
     public ShipsList shipsList;
     public Transform buttonParentPos;

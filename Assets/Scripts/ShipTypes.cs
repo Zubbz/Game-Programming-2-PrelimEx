@@ -4,6 +4,6 @@ using UnityEngine;
 
 public enum Size
 {
-    Small, Medium, Large, Giant
+    Small, Medium, Large, Giant //sizes of the ships
 }
 

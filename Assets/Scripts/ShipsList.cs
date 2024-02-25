@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ShipsList : MonoBehaviour
 {
-    public Ships[] ships;
+    public Ships[] ships; // references the Ship script to access the scriptable objects
     private string folderPath = "Ship";
 
     private void Start()
     {
-        ships = Resources.LoadAll<Ships>(folderPath);
+        ships = Resources.LoadAll<Ships>(folderPath); // loads all the created scriptable objects
     }
 }
