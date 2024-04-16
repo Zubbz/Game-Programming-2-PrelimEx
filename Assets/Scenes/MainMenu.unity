@@ -297,8 +297,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0012512207, y: -0.0008392334}
+  m_SizeDelta: {x: 45.515, y: 5.7885}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &38236165
 MonoBehaviour:
@@ -1060,10 +1060,10 @@ RectTransform:
   m_Father: {fileID: 659195320}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -605, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -569, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850367336
 MonoBehaviour:
@@ -1641,6 +1641,7 @@ GameObject:
   - component: {fileID: 1155323569}
   - component: {fileID: 1155323568}
   - component: {fileID: 1155323567}
+  - component: {fileID: 1155323570}
   m_Layer: 5
   m_Name: StartBtn
   m_TagString: Untagged
@@ -1712,7 +1713,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1155323568}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1155323570}
+        m_TargetAssemblyTypeName: ShipsButton, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1155323568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1751,6 +1764,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155323565}
   m_CullTransparentMesh: 1
+--- !u!114 &1155323570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155323565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43c05c100035258418368843eaced6e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipsBtnNameText: {fileID: 0}
 --- !u!1 &1204634164
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,8 +1812,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 297}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.952, y: 353.646}
+  m_SizeDelta: {x: 646.076, y: 196.681}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1204634166
 MonoBehaviour:
@@ -1836,8 +1862,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 180
-  m_fontSizeBase: 180
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1872,7 +1898,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -410.4107, y: -177.19313, z: -407.18073, w: 0}
+  m_margin: {x: 0.11737823, y: 0.043540947, z: -0.105674736, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1921,8 +1947,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -788, y: 473}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -772.80035, y: 452.41324}
+  m_SizeDelta: {x: 230.399, y: 91.173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1243822866
 MonoBehaviour:
@@ -2007,7 +2033,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -7.8609943, z: -415.07388, w: -37.73228}
+  m_margin: {x: 0, y: -0.57379913, z: -0.2096019, w: -0.08138658}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2088,7 +2114,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -2374,10 +2400,10 @@ RectTransform:
   m_Father: {fileID: 659195320}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 329, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 322, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1756505522
 MonoBehaviour:
